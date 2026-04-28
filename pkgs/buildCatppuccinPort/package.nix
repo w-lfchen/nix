@@ -14,8 +14,7 @@ lib.extendMkDerivation {
     let
       lastModified = args.lastModified or finalAttrs.src.lastModified or null;
     in
-    args
-    // {
+    {
       pname = args.pname or "catppuccin-${finalAttrs.port}";
       version =
         args.version or ("0" + lib.optionalString (lastModified != null) "-unstable-${lastModified}");
@@ -28,6 +27,9 @@ lib.extendMkDerivation {
         });
 
       nativeBuildInputs = args.nativeBuildInputs or [ ] ++ [ catppuccinInstallHook ];
+
+      __structuredAttrs = true;
+      strictDeps = true;
 
       meta = {
         description = "Soothing pastel theme for ${finalAttrs.port}";
