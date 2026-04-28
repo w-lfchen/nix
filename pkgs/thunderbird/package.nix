@@ -1,12 +1,7 @@
 { buildCatppuccinPort }:
 
 buildCatppuccinPort {
-  port = "wezterm";
+  port = "thunderbird";
 
   dontCatppuccinBuild = true;
-
-  installTargets = [
-    "dist"
-    "plugin"
-  ];
 }

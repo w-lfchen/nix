@@ -1,12 +1,7 @@
 { buildCatppuccinPort }:
 
 buildCatppuccinPort {
-  port = "wezterm";
+  port = "bat";
 
   dontCatppuccinBuild = true;
-
-  installTargets = [
-    "dist"
-    "plugin"
-  ];
 }

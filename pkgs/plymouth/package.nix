@@ -6,16 +6,20 @@
 buildCatppuccinPort (finalAttrs: {
   port = "plymouth";
 
-  dontCatppuccinInstall = true;
+  dontCatppuccinBuild = true;
 
   postPatch = ''
-    substituteInPlace themes/**/*.plymouth \
+    substituteInPlace plymouth.tera \
       --replace-fail '/usr' '${placeholder "out"}'
   '';
 
-  postInstall = ''
+  installPhase = ''
+    runHook preInstall
+
     mkdir -p $out/share/plymouth
     mv themes/ $out/share/plymouth/themes/
+
+    runHook postInstall
   '';
 
   meta = {

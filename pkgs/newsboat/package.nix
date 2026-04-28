@@ -1,12 +1,7 @@
 { buildCatppuccinPort }:
 
 buildCatppuccinPort {
-  port = "wezterm";
+  port = "newsboat";
 
   dontCatppuccinBuild = true;
-
-  installTargets = [
-    "dist"
-    "plugin"
-  ];
 }
