@@ -170,9 +170,9 @@
     "rev": "798ad2e75a11766e9ba50e76e59aea6a81eb4866"
   },
   "limine": {
-    "hash": "sha256-CdL1fq7JKju5SOvt8pBynLzM1knlM26SRinqYD48b+c=",
-    "lastModified": "2024-08-04",
-    "rev": "87a6320b8385c2745468eeff925c57a223200085"
+    "hash": "sha256-ccD/6soFIJT4hUCFbbEhfOda10McAW+KtEDkVy5MXrk=",
+    "lastModified": "2026-05-05",
+    "rev": "01c564b7903280d12950acd19237774d07ad163c"
   },
   "lsd": {
     "hash": "sha256-lf6VawCgK9VlKO+PAzPD/WqPjxoqw2j000b5ZlEXj/Y=",
@@ -326,8 +326,8 @@
   },
   "yazi": {
     "hash": "sha256-Og33IGS9pTim6LEH33CO102wpGnPomiperFbqfgrJjw=",
-    "lastModified": "2025-12-29",
-    "rev": "fc69d6472d29b823c4980d23186c9c120a0ad32c"
+    "lastModified": "2026-05-14",
+    "rev": "41f24ed142e34109a9a65a5dfe58c1b4eb6d2fd9"
   },
   "zathura": {
     "hash": "sha256-upyfc4OSx9xKUoM/JdRfuXiw38ffoSB/Utm2jpyXgy8=",
